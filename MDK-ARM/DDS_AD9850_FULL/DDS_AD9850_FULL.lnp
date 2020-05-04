@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"dds_ad9850_full\startup_stm32f103xb.o"
+"dds_ad9850_full\ad9850.o"
+"dds_ad9850_full\i2c_lcd.o"
+"dds_ad9850_full\rotary_sw.o"
+"dds_ad9850_full\main.o"
+"dds_ad9850_full\stm32f1xx_it.o"
+"dds_ad9850_full\stm32f1xx_hal_msp.o"
+"dds_ad9850_full\stm32f1xx_hal_gpio_ex.o"
+"dds_ad9850_full\stm32f1xx_hal_i2c.o"
+"dds_ad9850_full\stm32f1xx_hal.o"
+"dds_ad9850_full\stm32f1xx_hal_rcc.o"
+"dds_ad9850_full\stm32f1xx_hal_rcc_ex.o"
+"dds_ad9850_full\stm32f1xx_hal_gpio.o"
+"dds_ad9850_full\stm32f1xx_hal_dma.o"
+"dds_ad9850_full\stm32f1xx_hal_cortex.o"
+"dds_ad9850_full\stm32f1xx_hal_pwr.o"
+"dds_ad9850_full\stm32f1xx_hal_flash.o"
+"dds_ad9850_full\stm32f1xx_hal_flash_ex.o"
+"dds_ad9850_full\stm32f1xx_hal_exti.o"
+"dds_ad9850_full\stm32f1xx_hal_tim.o"
+"dds_ad9850_full\stm32f1xx_hal_tim_ex.o"
+"dds_ad9850_full\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "DDS_AD9850_FULL\DDS_AD9850_FULL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DDS_AD9850_FULL.map" -o DDS_AD9850_FULL\DDS_AD9850_FULL.axf
